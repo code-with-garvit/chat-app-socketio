@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="popup-container" id="popup">
+    <div class="popup">
+      <h2>Welcome to the Group Chat Application</h2>
+      <button id="close">Start chatting</button>
+    </div>
+  </div>
+  
+  <div class="messages-container">
+    <ul class="messages" id="messages"></ul>
+    <form class="send-form" id="sendForm">
+      <input type="text" placeholder="Enter a message..." id="msg" autocomplete="off" />
+      <button type="submit">
+        <i class="fas fa-paper-plane"></i> Sends
+      </button>
+    </form>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

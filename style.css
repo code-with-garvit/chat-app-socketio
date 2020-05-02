@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fff;
+	font-family: 'Muli', sans-serif;
+	margin: 0;
+}
+
+.messages {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	list-style-type: none;
+	padding: 50px 0 50px;
+  margin: 0;
+}
+
+.messages li {
+	background-color: #333;
+	border-radius: 4px;
+	color: #fff;
+	align-self: flex-start;
+	padding: 15px;
+	margin: 15px;
+}
+
+/* .messages li:nth-of-type(even) {
+	align-self: flex-end;
+} */
+
+.send-form {
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	width: 100%;
+}
+
+.send-form input {
+	border: 1px solid #ccc;
+	font-family: 'Muli', sans-serif;
+	font-size: 16px;
+	padding: 12px;
+	line-height: 16px;
+	width: calc(100% - 100px);
+}
+
+.send-form button {
+	background-color: #333;
+	border: 0;
+	color: #fff;
+	font-size: 16px;
+	padding: 14px;
+	width: 100px;
+}
+
+.popup-container {
+	background-color: rgba(0, 0, 0, 0.9);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 100;
+}
+
+.popup {
+	background-color: #fff;
+	padding: 20px;
+  text-align: center;
+}
+
+.popup p {
+	margin: 5px 0;
+}
+
+.popup button {
+	background-color: #333;
+	border: 0;
+	color: #fff;
+	font-size: 16px;
+	padding: 14px;
+  margin-top: 20px;
+}
